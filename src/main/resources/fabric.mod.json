@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "gipples_galore",
+  "version": "${version}",
+
+  "name": "Gipples Galore",
+  "description": "Features that were never meant to be.",
+  "authors": [
+    "Rowan",
+    "Monozari",
+    "sawlferton",
+    "Uraneptus",
+    "KingRolly",
+    "gaytwinkfemboy"
+  ],
+  "contact": {},
+
+  "license": "Apache-2.0",
+  "icon": "assets/gipples_galore/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.digitalpear.gipples_galore.client.GipplesGaloreClient"
+    ],
+    "main": [
+      "net.digitalpear.gipples_galore.GipplesGalore"
+    ],
+    "fabric-datagen": [
+      "net.digitalpear.gipples_galore.GGDatagens"
+    ]
+  },
+
+          "mixins": [
+            "gipples_galore.mixins.json"
+      ],
+    
+  "depends": {
+    "fabricloader": ">=0.14.22",
+              "fabric": "*",
+          "minecraft": ">=1.20"
+  }
+}
